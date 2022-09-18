@@ -45,6 +45,28 @@
     width: 100%;
     animation: car 1s linear infinite;
 }
+.tyres{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 180px;
+    z-index: 2;
+}
+.tyres img{
+    width: 60px;
+    height: 60px;
+    animation: tyres 1s linear infinite;
+}
+.back{
+    position: absolute;
+    left: -127px;
+    top: 15px;
+}
+.front{
+    position: absolute;
+    left: 57px;
+    top: 15px;
+}
 
 
 
@@ -76,5 +98,10 @@
     }
     0%{
         transform: translateY(-1.5px);
+    }
+}
+@keyframes tyres{
+    100%{
+        transform: rotate(360deg);
     }
 }
