@@ -27,19 +27,19 @@
 .buildings{
     position: absolute;
     background-image: url(./Car_Animation_Img/city.png);
-    bottom: 200px;
+    bottom: 12.5rem;
     right: 0;
     left: 0;
-    height: 250px;
+    height: 15.63rem;
     width: 500%;
     animation: buildings 20s linear infinite;
 }
 .car{
-    width: 300px;
+    width: 18.75rem;
     position: absolute;
-    left: calc(50% - 150px);
+    left: calc(50% - 9.375rem);
     z-index: 2;
-    bottom: 100px;
+    bottom: 6.25rem;
 }
 .car img{
     width: 100%;
@@ -49,22 +49,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 180px;
+    bottom: 11.25rem;
     z-index: 2;
 }
 .tyres img{
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     animation: tyres 1s linear infinite;
 }
 .back{
     position: absolute;
-    left: -127px;
+    left: -7.9375rem;
     top: 15px;
 }
 .front{
     position: absolute;
-    left: 57px;
+    left: 3.5625rem;
     top: 15px;
 }
 
