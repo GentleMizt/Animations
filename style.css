@@ -3,6 +3,78 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    border: 1px solid red;
+.overall-div{
+    width: 100%;
+    background-image: url(./Car_Animation_Img/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.road{
+    height: 200px;
+    width: 500%;
+    background-image: url(./Car_Animation_Img/road.jpg);
+    /* background-repeat: repeat-x; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: road 6s linear infinite;
+}
+.buildings{
+    position: absolute;
+    background-image: url(./Car_Animation_Img/city.png);
+    bottom: 200px;
+    right: 0;
+    left: 0;
+    height: 250px;
+    width: 500%;
+    animation: buildings 20s linear infinite;
+}
+.car{
+    width: 300px;
+    position: absolute;
+    left: calc(50% - 150px);
+    z-index: 2;
+    bottom: 100px;
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes road{
+    100%{
+        transform: translateX(-4000px);
+    }
+}
+@keyframes buildings{
+    100%{
+        transform: translateX(-2000px);
+    }
+}
+@keyframes car{
+    100%{
+        transform: translateY(-1.5px);
+    }
+    50%{
+        transform: translateY(1.5px);
+    }
+    0%{
+        transform: translateY(-1.5px);
+    }
 }
